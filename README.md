@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎥 YouTube Clone (React + YouTube Data API)
 
 A modern YouTube Clone built using **React**, **Vite**, and the **YouTube Data API v3**.  
@@ -24,3 +25,6 @@ It replicates the look and feel of YouTube’s interface — including a **respo
 - **React Router** (Page navigation)
 - **YouTube Data API v3** (Video content source)
 - **CSS / Flexbox / Grid** (Responsive design)
+=======
+# web-dev-projects
+>>>>>>> fd0082d5b1b545143b851c4182587e2d2e089a67
