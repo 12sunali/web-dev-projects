@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+body {
+  background: radial-gradient(circle at top, #1e1e2f, #111);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  padding: 1rem 3rem;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  border-radius: 15px;
+  text-shadow: 0 0 15px #ff00cc, 0 0 30px #3333ff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  from {
+    text-shadow: 0 0 15px #ff00cc, 0 0 30px #3333ff, 0 0 45px #ff00cc;
+  }
+  to {
+    text-shadow: 0 0 25px #3333ff, 0 0 50px #ff00cc, 0 0 70px #3333ff;
+  }
+}
+
+/* Choice Buttons */
+.choice {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #444;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.choice:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 0 25px #ff00cc, 0 0 50px #3333ff;
+}
+
+img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.choice:hover img {
+  transform: scale(1.2);
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+/* Scoreboard */
+.score-board {
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px #3333ff;
+  font-size: 2rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+/* Message Box */
+.msg-container {
+  margin-top: 3rem;
+}
+
+#msg {
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  box-shadow: 0 0 20px #ff00cc, 0 0 40px #3333ff;
+  transition: all 0.3s ease;
+}
